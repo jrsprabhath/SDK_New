@@ -2,20 +2,13 @@ package com.example.androidapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.util.Patterns
 import android.widget.Button
-import android.widget.EditText
 import android.widget.Toast
 import androidx.lifecycle.lifecycleScope
-import com.example.androidapp.services.RetrofitClient
 import com.example.sdk_new.Models.DeleteUser
 import com.example.sdk_new.testSDK
 import com.google.android.material.textfield.TextInputEditText
 import kotlinx.coroutines.launch
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
 
 class Delete_User : AppCompatActivity() {
     private lateinit var rId : TextInputEditText

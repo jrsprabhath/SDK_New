@@ -6,7 +6,6 @@ import android.content.ClipboardManager
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.util.Patterns.EMAIL_ADDRESS
 import android.view.LayoutInflater
 import android.widget.Button
@@ -15,15 +14,10 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
-import com.example.androidapp.modelResponse.CreateUser
-import com.example.androidapp.services.CommonProvider
-import com.example.androidapp.services.RetrofitClient
+import com.example.sdk_new.Service.CommonProvider
 import com.example.sdk_new.testSDK
 import com.google.android.material.textfield.TextInputEditText
 import kotlinx.coroutines.launch
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
 import java.util.Calendar
 
 class Create_User : AppCompatActivity() {

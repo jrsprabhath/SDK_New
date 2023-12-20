@@ -2,11 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application>
         <activity
-            android:name=".Logic.GetSurveys"
+            android:name="com.example.sdk_new.Logic.GetSurveys"
             android:exported="true">
         </activity>
         <activity
-            android:name=".testSDK"
+            android:name="com.example.sdk_new.testSDK"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
