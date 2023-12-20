@@ -1,7 +1,6 @@
 package com.example.sdk_new.Logic
 
 import android.content.Context
-import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.ProgressBar
@@ -9,11 +8,10 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.opinionbar_sdk.R
 import com.example.sdk_new.Adapter.Adapter
 import com.example.sdk_new.Models.Survey
-import com.example.sdk_new.R
 import com.example.sdk_new.Service.RetrofitClient
-import com.example.sdk_new.testSDK
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -22,6 +20,7 @@ class GetSurveys:AppCompatActivity() {
     private lateinit var recyclerView: RecyclerView
     private lateinit var userGuid : String
     private lateinit var progressbar : ProgressBar
+    private val USER_GUID_EXTRA = "user_guid"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_surveys_list)
@@ -52,15 +51,5 @@ class GetSurveys:AppCompatActivity() {
                 callback.invoke(emptyList())
             }
         })
-    }
-
-    companion object {
-        const val USER_GUID_EXTRA = "user_guid"
-        // Helper function to create an Intent with userGuid as an extra
-        fun getSurveys(context: Context, userGuid: String): Intent {
-            return Intent(context, testSDK::class.java).apply {
-                putExtra(USER_GUID_EXTRA, userGuid)
-            }
-        }
     }
 }

@@ -10,7 +10,7 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
-import com.example.sdk_new.R
+import com.example.opinionbar_sdk.R
 import com.example.sdk_new.Models.Survey
 
 class Adapter(private val context: Context, private val dataList: List<Survey>) :
@@ -34,8 +34,8 @@ class Adapter(private val context: Context, private val dataList: List<Survey>) 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = dataList[position]
         holder.idTextView.text = item.ProjectId.toString()
-        holder.surveyNameView.text = item.SurveyName.toString()
-        holder.rewardView.text = item.RewardText.toString()
+        holder.surveyNameView.text = item.SurveyName
+        holder.rewardView.text = item.RewardText
         val length = item.SurveyLength.toString() + " Minutes"
         holder.surveyLengthView.text = length
         holder.go.setOnClickListener(){

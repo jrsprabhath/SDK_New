@@ -45,17 +45,27 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 }
-publishing {
-    publications {
-        create<MavenPublication>("mavenJava") {
-            from(components["java"])
-            groupId = "com.example"  // Replace with your group ID
-            artifactId = "SDK_New"  // Replace with your artifact ID
-            version = "1.0.0"  // Replace with your version
+android {
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+            withJavadocJar()
         }
     }
+}
 
-    repositories {
-        mavenLocal()
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("mavenJava") {
+                from(components["release"])
+                groupId = "com.example"  // Replace with your group ID
+                artifactId = "SDK_New"  // Replace with your artifact ID
+                version = "1.0.0"  // Replace with your version
+            }
+        }
+        repositories{
+            mavenLocal()
+        }
     }
 }
