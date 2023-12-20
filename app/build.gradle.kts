@@ -70,7 +70,7 @@ afterEvaluate {
                 version = "1.0.0"  // Replace with your version
             }
         }
-        repositories{
+        repositories {
             mavenLocal()
         }
     }
