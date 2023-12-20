@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingHorizontal="20dp"
+    android:layout_height="match_parent"
+    tools:context=".Update_User">
+
+    <TextView
+        android:id="@+id/tCreateUser"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:text="Update User"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/fUg"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:singleLine="true"
+        android:hint="User Guid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tCreateUser"
+        android:imeOptions="actionNext"
+        tools:ignore="HardcodedText" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/fTxId"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:singleLine="true"
+        android:hint="TxId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fRId"
+        android:imeOptions="actionNext"
+        tools:ignore="HardcodedText" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/fRId"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:singleLine="true"
+        android:hint="RId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fUg"
+        android:imeOptions="actionNext"
+        tools:ignore="HardcodedText" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/fExtMemberId"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:singleLine="true"
+        android:hint="ExtMemberId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fTxId"
+        android:imeOptions="actionNext"
+        tools:ignore="HardcodedText" />
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/fCountry"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:singleLine="true"
+        android:hint="Country"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fExtMemberId"
+        android:imeOptions="actionNext"
+        tools:ignore="HardcodedText" />
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/fState"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:singleLine="true"
+        android:hint="ExtMemberId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fCountry"
+        android:imeOptions="actionNext"
+        tools:ignore="HardcodedText" />
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/fFirstName"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:singleLine="true"
+        android:hint="First Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fState"
+        android:imeOptions="actionNext"
+        tools:ignore="HardcodedText" />
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/fLastName"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:singleLine="true"
+        android:hint="Last Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fFirstName"
+        android:imeOptions="actionNext"
+        tools:ignore="HardcodedText" />
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/fEmailAdd"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:singleLine="true"
+        android:hint="Email Address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fLastName"
+        android:imeOptions="actionNext"
+        tools:ignore="HardcodedText" />
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/fZip"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:singleLine="true"
+        android:hint="ZIP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fEmailAdd"
+        android:imeOptions="actionNext"
+        tools:ignore="HardcodedText" />
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/fGender"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:singleLine="true"
+        android:hint="Gender"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fZip"
+        android:imeOptions="actionNext"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:id="@+id/fDob"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:singleLine="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fGender"
+        android:hint="DOB"
+        android:textSize="18sp"
+        style="@style/Widget.AppCompat.Spinner.Underlined"
+        tools:ignore="HardcodedText"/>
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/fAdd1"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:singleLine="true"
+        android:hint="Address 1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fDob"
+        android:imeOptions="actionNext"
+        tools:ignore="HardcodedText" />
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/fAdd2"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:singleLine="true"
+        android:hint="Address 2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fAdd1"
+        android:imeOptions="actionNext"
+        tools:ignore="HardcodedText" />
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/fEthnicity"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:singleLine="true"
+        android:hint="Ethnicity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fAdd2"
+        android:imeOptions="actionNext"
+        tools:ignore="HardcodedText" />
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/fCity"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:singleLine="true"
+        android:hint="City"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fEthnicity"
+        android:imeOptions="actionNext"
+        tools:ignore="HardcodedText" />
+    <Button
+        android:id="@+id/bSaveUser"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Update User"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fCity"
+        tools:ignore="HardcodedText"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
